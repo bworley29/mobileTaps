@@ -11,10 +11,37 @@ ul.menu, ul.menu ul, nav ul {
     margin: 0;
     padding: 0;
 }
+
+#toggleNavIcon {display: none;}
+
 /*---------------------------------------------
                      ::4.2 Main Horizontal Navigation
 ----------------------------------------------*/
- 
+
+nav ul.mainNav
+{
+	position: relative;
+	width: 100%;
+	display: block;
+	margin-bottom: 0;
+	padding: 0;
+}
+	nav ul.mainNav li
+	{
+		position: relative;
+		display: inline-block;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+		nav ul.mainNav li a
+		{
+			display: block;
+			cursor: pointer;
+			color: #fff;
+			padding: .5em;
+		}
+
 /*---------------------------------------------
                      ::4.3 Sidebar Navigation
 ----------------------------------------------*/

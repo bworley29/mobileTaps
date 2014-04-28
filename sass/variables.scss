@@ -1,45 +1,65 @@
 
-/* $site-primary-color - dominant color used throughout the site */
+// $site-primary-color - dominant color used throughout the site 
 $site-primary-color: #333;                    						 
 
-/* $site-accent-color - accent color used throughout the site */
+// $site-accent-color - accent color used throughout the site 
 $site-accent-color: #FFCE16;                    					
 
-/* $form-header-row-background-color - background color used on form header rows */
+// $form-header-row-background-color - background color used on form header rows 
 $form-header-row-background-color: $site-primary-color;      		 
 
-/* $form-header-row-text-color - text color used on form header rows */
+// $form-header-row-text-color - text color used on form header rows 
 $form-header-row-text-color: #fff;            						 
 
-/* $tab-active-text-color - text color of active tab for tabbed content */
+// $tab-active-text-color - text color of active tab for tabbed content 
 $tab-active-text-color: $site-primary-color;                	 	 
 
-/* $tab-active-background-color - background color of active tab for tabbed content */
+// $tab-active-background-color - background color of active tab for tabbed content 
 $tab-active-background-color: $form-header-row-text-color;           
 
-/* $tab-inactive-text-color - text color of inactive tabs for tabbed content */
+// $tab-inactive-text-color - text color of inactive tabs for tabbed content 
 $tab-inactive-text-color: #c4c4c4;              					 
 
-/* $tab-inactive-background-color - background color of inactive tabs for tabbed content */
+// $tab-inactive-background-color - background color of inactive tabs for tabbed content 
 $tab-inactive-background-color: #eaeaea;         					 
 
-/* $subtle-border-color - border color when a subtle border is needed */
+// $subtle-border-color - border color when a subtle border is needed 
 $subtle-border-color:  #dddddd;                  					 
 
-/* $content-primary-background-color - background color of the primary content container */
+// $content-primary-background-color - background color of the primary content container 
 $content-primary-background-color: $form-header-row-text-color;      
 
-/* $body-copy-color - main body and paragraph text color */
+// $body-copy-color - main body and paragraph text color 
 $body-copy-color: $site-primary-color;                       		 
 
-/* $link-color - anchor link color */
+// $link-color - anchor link color 
 $link-color: #CB4631;                            					 
 
-/* $link-hover-color - anchor link hover state color */
+// $link-hover-color - anchor link hover state color 
 $link-hover-color: #AD3826;       
 
-/* $base-font-family - main body font family */
+// $base-font-family - main body font family 
 $base-font-family: "Helvetica Neue", Helvetica, sans-serif;
 
-/* $base-font-size - main body font size */
+// $base-font-size - main body font size
 $base-font-size: 1rem;             					 
+
+// $icon-font-base - to use Fontawesome this font family must be used
+$icon-font-family: FontAwesome;
+
+// Quick Search Mobile Search Icon
+$icon-font-search-open: '\f002';
+
+// Quick Search Mobile Search - Close Icon
+$icon-font-search-close: '\f00D';
+
+// Border Radius Prefix
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+

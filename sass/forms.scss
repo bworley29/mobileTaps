@@ -2,6 +2,7 @@
                      ::7. FORMS
 ==========================================================================================*/
 
+input#addressBox, input#cityBox, input#stateBox {display: none;}
 /*---------------------------------------------
                      ::7.1 Special Widths
 ----------------------------------------------*/
@@ -9,6 +10,39 @@
 /*---------------------------------------------
                      ::7.2 Global Form Styles
 ----------------------------------------------*/
+
+input {
+	border: 1px solid #ccc;
+	@include box-shadow(0 0 4px 1px rgba(0,0,0,.15) inset);
+	-webkit-appearance: none !important;
+	outline: none !important;
+	@include transition(border 700ms ease-in-out); 
+  @include placeholder {
+    color: #BABABA;
+    font-style: italic;  
+  }
+  
+  &:focus {
+	  border: 1px solid #999;
+  }
+}
+input.valid:focus {
+	@include box-shadow(0 0 5px green);
+	  border: 1px solid green;
+	  background: #fff;	  
+}
+
+input.invalid:focus {
+	@include box-shadow(0 0 5px red);
+	  border: 1px solid red;
+	  background: #fff;
+}
+
+input.invalid {
+	background: lighten(red, 30%);
+}
+
+select {outline: none !important;}
 
 /*---------------------------------------------
                      ::7.3 Validation

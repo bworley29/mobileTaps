@@ -12,8 +12,8 @@ text-decoration:none !important;
 line-height:2;
 padding:0 1em;
 border:0 none;
-background-color:#222; /* $client-color-background */
-color:#FFF; /* $client-color-background-invert */
+background-color:$site-primary-color; 
+color:$content-primary-background-color; 
 }
 
 /* Default Button Hovers */
@@ -24,11 +24,27 @@ input[type="submit"]:hover, input[type="button"]:hover, input.BBFormSubmitButton
                      ::6.2 Primary Buttons
 ----------------------------------------------*/
 input.BBFormSubmitButton, #submitButton button, input.BBSequenceMapNavigationNextButton, input.BBSequenceMapNavigationFinishButton, input[type="submit"], a[id$="NewMessageHyperlink"], div[id$="MessageView1_ActionsMenu"] a[value="16"], table.ProfilePhotoFormTable input[value="Select Image"], a[id$="LinkButtonYes"], a.loiDonateLink, span.buttonPrimary>a, input[value*="Save and Continue"], a.BBDocumentTabButton {
-background: #222; /* $client-color-background */
-color: #FFF; /* $client-color-background-invert */
+background: $site-primary-color;
+color: $content-primary-background-color;
 }
 /* Primary Button Hovers */
 input.BBFormSubmitButton:hover, input.BBSequenceMapNavigationFinishButton:hover, input[type="submit"]:hover, a[id$="NewMessageHyperlink"]:hover, div[id$="MessageView1_ActionsMenu"] a[value="16"]:hover, table.ProfilePhotoFormTable input[value="Select Image"]:hover, a[id$="LinkButtonYes"]:hover, a.loiDonateLink:hover, span.buttonPrimary>a:hover, input[value*="Save and Continue"]:hover, a.BBDocumentTabButton {
+}
+
+input#submitDonation[type="submit"] {
+	//padding: .35em 1em;
+	float: right;
+	margin-right: 6.5em;
+}
+
+section.large-7.columns input[type="submit"] {
+	margin: 0 1em 2.5em 0;
+	padding: 0 1.2em;
+	font-size: 15px;
+	line-height: 35px;
+	height: 35px;
+	@include border-radius(4px);
+	float: right;
 }
  
 /*---------------------------------------------
