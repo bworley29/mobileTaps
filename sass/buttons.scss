@@ -49,10 +49,15 @@ section.large-7.columns input[type="submit"] {
 
 .repoBtn {
 	@include button;
-	padding: .35em 1em;
+	padding: .35em 1em .45em;
 	display: block;
 	text-align: center;
 	@include border-radius(4px);
+	max-width: 27em;
+	
+	&:hover {
+		color: #333;
+	}
 }
  
 /*---------------------------------------------
