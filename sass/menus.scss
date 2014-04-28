@@ -1,0 +1,60 @@
+/*=========================================================================================
+                     ::4. MENUS
+==========================================================================================*/
+
+/*---------------------------------------------
+                     ::4.1 Global Menu Styles
+----------------------------------------------*/
+/* menu list reset */
+ul.menu, ul.menu ul, nav ul {
+	list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------------------
+                     ::4.2 Main Horizontal Navigation
+----------------------------------------------*/
+ 
+/*---------------------------------------------
+                     ::4.3 Sidebar Navigation
+----------------------------------------------*/
+
+/*---------------------------------------------
+                     ::4.4 Breadcrumb Navigation 
+----------------------------------------------*/
+.wrapBreadcrumbs ul.menu {
+	font-size: 0.813em;
+	line-height: 2.308em;
+	
+}
+.wrapBreadcrumbs ul li {
+	display: none;
+}
+
+.wrapBreadcrumbs li.selected, .wrapBreadcrumbs ul {
+	display: inline;
+}
+.wrapBreadcrumbs li.selected li.selected {
+
+}
+.wrapBreadcrumbs ul li.selected a {
+	text-decoration: none;
+}
+.wrapBreadcrumbs ul li  li.selected a {
+	padding-left: 1em;
+	position:relative;
+	
+}
+.wrapBreadcrumbs ul li  li.selected a:before {
+	content:"\00bb"; 
+	width: 2em;
+	position:relative;
+	left: -0.5em;
+	top: -0.077em;
+}
+.wrapBreadcrumbs ul li  li.selected a:before:hover {
+	text-decoration: none !important;
+}
+/*---------------------------------------------
+                     ::4.5 Footer Navigation
+----------------------------------------------*/
