@@ -46,6 +46,10 @@ section.large-7.columns input[type="submit"] {
 	@include border-radius(4px);
 	float: right;
 }
+
+.repoBtn {
+	@include button;
+}
  
 /*---------------------------------------------
                      ::6.3 Inline Buttons
