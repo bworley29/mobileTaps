@@ -4,7 +4,7 @@
 	     1.1 Normalize
 		   1.2 Admin Fixes
 		   1.3 Clearfix
-     2. Default Part Styles (minified....do not edit)
+     2. Default Part Styles
      3. Page Layout and Structure
            3.1 Responsive Grid
 		   3.2 Layout
@@ -13,19 +13,19 @@
            3.5 Quick Search
 		   3.6 Skip Link
      4. Menus
-           4.1 Global Menu Styles (*** J. Schultz ***)
+           4.1 Global Menu Styles
            4.2 Main Horizontal Navigation
            4.3 Sidebar Navigation
-           4.4 Breadcrumb Navigation (*** J. Schultz ***)
+           4.4 Breadcrumb Navigation
            4.5 Footer Navigation
      5. Text
-           5.1 Headers (*** C. Martin, D. Buzzell ***)
+           5.1 Headers 
 		        5.1.1 Part Headers
-           5.2 Links  (*** J. Schultz ***)
-           5.3 Paragraphs  (*** J. Schultz ***)
+           5.2 Links 
+           5.3 Paragraphs
            5.4 Form Field Typographgy
-           5.5 Lists (*** J. Schultz ***)
-     6. Buttons (*** D. Buzzell ***)
+           5.5 Lists 
+     6. Buttons
 	 	   6.1 Default Buttons
 		   6.2 Primary Buttons
 		   6.3 Inline Buttons
@@ -34,12 +34,12 @@
      7. Forms
            7.1 Special Widths
            7.2 Global Form Styles
-           7.3 Validation  (*** C. Martin ***)
-					 7.4 Date Pickers (*** D. Mastin ***)
-	 8. Pagination (*** D. Buzzell ***)
-	 9. Progress Indicators (*** D. Buzzell ***)
-	 10. Images (*** J. Schultz ***)
-     11. Tables (*** D. Buzzell ***)
+           7.3 Validation
+		   7.4 Date Pickers
+	 8. Pagination
+	 9. Progress Indicators
+	 10. Images
+     11. Tables 
 	       11.1 Alternating Rows
 		   11.2 Header Rows
 		   11.3 Sortable Columns
@@ -59,8 +59,7 @@
      	   15.2 Tablet
      	   15.3 Desktop
 
-======================================================*/
-/* variables.scss */
+====================================================== */
 /*=========================================================================================
                      ::1. CSS RESETS
 ==========================================================================================*/
@@ -206,7 +205,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* reset.scss */
 /*=========================================================================================
                      ::2. DEFAULT PART STYLES (minified....do not edit)
 ==========================================================================================*/
@@ -216,7 +214,6 @@ tr[id*="_trDesignationOther"][style*="hidden"] {
 tr[id*="_trDesignationOther"][style=""] {
   display: table-row; }
 
-/* defaultPartStyles.scss */
 /*=========================================================================================
                      ::3. PAGE LAYOUT & STRUCTURE
 ==========================================================================================*/
@@ -560,7 +557,6 @@ a.skip:hover, a.skip:active, a.skip:focus {
   margin: 0 auto 0 -10em;
   width: 20em; }
 
-/* pageLayout.scss */
 /*=========================================================================================
                      ::4. MENUS
 ==========================================================================================*/
@@ -635,7 +631,6 @@ nav ul.mainNav li a {
 /*---------------------------------------------
                      ::4.5 Footer Navigation
 ----------------------------------------------*/
-/* menus.scss */
 /*=========================================================================================
                      ::5. TEXT
 ==========================================================================================*/
@@ -837,7 +832,6 @@ ul.large li {
 li p {
   line-height: 21px; }
 
-/* text.scss */
 /*=========================================================================================
                      ::6. Buttons
 ==========================================================================================*/
@@ -908,7 +902,6 @@ input[type="submit"][disabled], input[type="button"][disabled], a.aspNetDisabled
   filter: alpha(opacity=50);
   cursor: default !important; }
 
-/* buttons */
 /*=========================================================================================
                      ::7. FORMS
 ==========================================================================================*/
@@ -984,7 +977,6 @@ img.ui-datepicker-trigger {
   margin-left: -2em;
   margin-bottom: -3px; }
 
-/* forms.scss */
 /*=========================================================================================
                      ::8. PAGINATION
 ==========================================================================================*/
@@ -1040,7 +1032,6 @@ span.PagedListFooter span[id$="lblFooter"], span.PagedListHeader span[id$="lblHe
 span.PagedListFooter a[id$="lnkFirst"], span.PagedListFooter a[id$="lnkPrevious"], span.PagedListFooter a[id$="lnkNext"], span.PagedListFooter a[id$="lnkLast"], span.PagedListHeader a[id$="lnkFirst"], span.PagedListHeader a[id$="lnkPrevious"], span.PagedListHeader a[id$="lnkNext"], span.PagedListHeader a[id$="lnkLast"] {
   border: 0; }
 
-/* pagination.scss */
 /*=========================================================================================
                      ::9. PROGRESS INDICATORS
 ==========================================================================================*/
@@ -1116,7 +1107,6 @@ table[id$="tblProgress"] th.EventProgressCell:after {
   border-color: transparent transparent transparent #222;
   /* $client-color-background */ }
 
-/* progressIndicator.scss */
 /*=========================================================================================
                      ::10. IMAGES
 ==========================================================================================*/
@@ -1139,7 +1129,6 @@ img {
   float: right;
   margin: 0 0 0.5em 0.5em; }
 
-/* images.scss */
 /*=========================================================================================
                      ::11. TABLES
 ==========================================================================================*/
@@ -1189,7 +1178,6 @@ table.BBListingTable th a:hover, tr.BBDocumentDisplayHeaderRow td a:hover {
 table.BBListingTable td.BBListingItem, tr.BBListEvenRowStyle > td, tr.BBListOddRowStyle > td {
   border-bottom: 1px dotted #AAA; }
 
-/* tables.scss */
 /*=========================================================================================
                      ::12. OTHER GLOBAL CLASS & ID DEFINITIONS
 ==========================================================================================*/
@@ -1199,7 +1187,6 @@ table.BBListingTable td.BBListingItem, tr.BBListEvenRowStyle > td, tr.BBListOddR
 /*---------------------------------------------
                      ::12.2 Replication Classes & ID's
 ----------------------------------------------*/
-/* replicationClassesIDs.scss */
 /*=========================================================================================
                      ::13. SPECIFIC PARTS & STYLES
 ==========================================================================================*/
@@ -1470,11 +1457,9 @@ li.mailingName {
 ol#optimizedDonateForm li label[for="cscCode"] + .iconClearField {
   display: none !important; }
 
-/* specificPartStyles.scss */
 /*=========================================================================================
                      ::14. PRINT STYLES
 ==========================================================================================*/
-/* print.scss */
 /*=========================================================================================
                      ::15. RESPONSIVE STYLES
 ==========================================================================================*/
@@ -1704,4 +1689,3 @@ ol#optimizedDonateForm li label[for="cscCode"] + .iconClearField {
 /*=========================================================================================
                      ::15.3 DESKTOP
 ==========================================================================================*/
-/* responsive */
