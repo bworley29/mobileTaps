@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <title></title>
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" type="text/css">
+</head>
+
+<body>
+    <header class="container row" role="banner">
+        <h1>Mobile Taps Donation Form</h1>
+    </header>
+
+    <nav class="container"></nav>
+
+    <div class="container row">
+        <section class="large-7 columns" role="content">
+            <h1>Give Online</h1><span id="formerror" class="error"></span>
+
+            <ol id="optimizedDonateForm">
+                <li>
+                    <label id="giveAmount">Give Amount</label>
+
+                    <dl id="givingRdoList">
+                        <dd><input type="radio" required="true" id="amountLevelOne" name="amountLevel" value="25"><label for="amountLevelOne" class="rdoAmt">25</label></dd>
+
+                        <dd><input type="radio" required="true" id="amountLevelTwo" name="amountLevel" value="75"><label for="amountLevelTwo" class="rdoAmt">75</label></dd>
+
+                        <dd><input type="radio" required="true" id="amountLevelThree" name="amountLevel" value="200"><label for="amountLevelThree" class="rdoAmt">200</label></dd>
+                    </dl>
+                </li>
+
+                <li><label for="email">Email</label> <input type="email" required="true" name="amount" id="email" pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" placeholder="e.g. email@sample.com"></li>
+
+                <li><label for="cardholder">Cardholder</label> <input type="text" required="true" pattern="^[a-zA-Z\. ]+$" name="cardholder" id="cardholder" placeholder="Full Name"><div class="userFirstLastNameOption">
+	<span class="same">Is the <strong>Mailing</strong> name different? <i class="iconAddName">Enter Mailing name</i></span>  
+</div></li>
+<li class="mailingName">
+	<label for="mailingName">Mailing First &amp; Last Name</label> <input type="text" required="true" pattern="^[a-zA-Z\. ]+$" name="mailingName" id="mailingName" placeholder="Full Name">
+</li>
+
+                <li><label for="cardNumber">Card Number</label> <input type="tel" required="true" name="cardNumber" maxlength="16" autocomplete="off" pattern="[0-9]{15,16}" id="cardNumber" placeholder="e.g. 1234123412341234"><span class="cardTypeEnt"></span></li>
+
+                <li><label for="expDate">Card Expiration</label> <select name="card_exp_month" id="cardExpMonth">
+                	<option selected value="">
+                        Month
+                    </option>
+                    <option value="01">
+                        01
+                    </option>
+
+                    <option value="02">
+                        02
+                    </option>
+
+                    <option value="03">
+                        03
+                    </option>
+                    <option value="04">
+                        04
+                    </option>
+                    <option value="05">
+                        05
+                    </option>
+                    <option value="06">
+                        06
+                    </option>
+                    <option value="07">
+                        07
+                    </option>
+                    <option value="08">
+                        08
+                    </option>
+                    <option value="09">
+                        09
+                    </option>
+                    <option value="10">
+                        10
+                    </option>
+                    <option value="11">
+                        11
+                    </option>
+                    <option value="12">
+                        12
+                    </option>
+                </select> <select name="card_exp_year" id="cardExpYear">
+                </select></li>
+
+                <li>
+                    <label for="cscCode">Card Security Code</label><input class="shorter" type="tel" required="true" name="cscCode" maxlength="4" pattern="[0-9]{3,4}" id="cscCode" placeholder="123"><span class="cscCodeIcon">&#xf09d;</span><span class="cscHelp"><em>what's this?</em><div>
+                        <strong>CSC:</strong> 3 to 4 digit code on back of card.
+                    </div></span>
+                </li>
+
+                <li id="addressBox"><label for="address-line-1">Street Address</label> <input type="text" name="address-line-1" id="address-line-1"></li>
+
+                <li id="cityBox"><label for="city">City</label> <input type="text" name="city" id="city"></li>
+
+                <li id="zipBox"><label for="zip">Billing Zip Code</label> <input class="short" type="tel" required="true" maxlength="5" name="zip" pattern="(\d{5}([\-]\d{4})?)" id="zip" placeholder="12345"></li>
+
+                <li id="stateBox"><label for="state">State</label> <input class="shorter" type="text" name="state" id="state"></li>
+            </ol>
+        </section>
+
+        <aside class="large-3 columns">
+	        <ol>
+	        	<li class="rdoAmtChk">$0</li>
+	        	<li class="emailAddEnt"></li>
+	        	<li class="cardHolderEnt"></li>
+	        	<li><span class="cardNumEnt"></span> <span class="cardTypeEnt"></span></li>
+	        	<li><span class="cardExpMnthSel"></span>&nbsp;/&nbsp;<span class="cardExpYrSel"></span></li>
+	        	<li class="cscEnt"></li>
+	        	<li class="zipEnt"></li>
+	        	<li class="cityPopulated"></li>
+	        	<li class="statePopulated"></li>
+	        </ol>
+        </aside>
+    </div>
+
+    <footer class="container">
+        <div class="row"></div>
+    </footer><script src="js/vendor/jquery.js" type="text/javascript">
+</script><script src="js/taps.js" charset="utf-8" type="text/javascript">
+</script>
+</body>
+</html>

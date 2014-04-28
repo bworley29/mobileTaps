@@ -1,0 +1,219 @@
+/*=========================================================================================
+                     ::5. TEXT
+==========================================================================================*/
+
+body { 
+	color:$body-copy-color; 
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+}
+
+/*---------------------------------------------
+                     ::5.1 Headers
+----------------------------------------------*/
+
+/*** All headings ***/
+h1, 
+h2, *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.LoginSectionHeader, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.SearchJobHeading, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th,
+h3, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderFormTitle, *.EventItemTitleTime, *.EventItemTitleName, *.EventItemRegistrationsHeader, *.EventItemRegistrantsEventName, *.NewsChannelItemTitle, *.FRSectionHeader, *.FRFieldSetCaption, *.DiscussionGroupHeadingText, *.PostDiscussionReplyHeading, *.PostDiscussionPreviewHeading, *.SurveySubTitle, *.SpellHeading, table.ReportFormTable legend, fieldset .CHFormTitle, *.CalendarViewTopMiddle, *.ReportListingHeading, *.NCC_Forms_Subtitle, *.DiscussionTopicSubject, *.OCCHeader, *.ClassPageHeaderPageName,
+h4, *.DetailEventTitle, *.ListViewEventDate, *.ClassPageHeaderTeacherName, *.ClassPageHeaderTeacherEmail,
+h5, 
+h6 {
+  margin: 0 0 0.5em;
+  padding: 0;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Roboto Slab',serif;
+  line-height: normal;
+  text-align: left;
+}
+
+/*** <h1>, main part titles, and other elements requiring similar emphasis ***/
+h1 {
+  font-size: 2em;
+  clear:both;
+  margin-top: .5em;
+}
+
+/*** <h2>, sub titles within parts, and other elements requiring similar emphasis ***/
+h2, *.BBFormTitle, *.EventCalendarName, *.SpellFormTitle, *.ReportTitle, *.LoginSectionHeader, *.DonationListingHeading, *.DonationCaptureListingHeading, *.EventSectionHeader, *.FRDonorListSetCaption, *.FRCommentsFieldSet .FRFieldSetCaption, *.ECardWizardHeading, *.UpcomingEventTitle, *.RecentEventTitle, *.SearchFormTable .SearchFormTitle, *.CHFormTitle, *.NCC_Forms_Title, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.PostChannelStoryFormTitle, *.ReportsLandingTable caption, *.SearchJobHeading, *.JobResultsHeading, *.ClassPageHeaderClassName, *.UPMPartEditToolbarTitle, *.myHomeBox th {
+  font-size: 1.5em;
+}
+  *.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventCalendarName, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.DiscussionGroupFormTitle, *.JobBoardFormTitle, *.EventSectionHeader, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.DirectoryFormTitle, *.CalendarFormLegend, *.ProfileFormTitle, *.DiscussionGroupHeadingCell, *.BBPollsFormTitle, *.NewsChannelFormTitle, *.FRSectionHeader {
+    padding: 0.5em 0;
+    margin:0;
+  }
+  *.SurveyTitle {
+    font-size:1em;
+  }
+
+/*** <h3>, minor element headings, and other elements requiring similar emphasis ***/  
+h3, *.CalendarFormLegend, *.ListViewDateLabel, *.DetailCaption, *.NewsReaderFormTitle, *.EventItemTitleTime, *.EventItemTitleName, *.EventItemRegistrationsHeader, *.EventItemRegistrantsEventName, *.NewsChannelItemTitle, *.FRSectionHeader, *.FRFieldSetCaption, *.DiscussionGroupHeadingText, *.PostDiscussionReplyHeading, *.PostDiscussionPreviewHeading, *.SurveySubTitle, *.SpellHeading, table.ReportFormTable legend, fieldset .CHFormTitle, *.CalendarViewTopMiddle, *.ReportListingHeading, *.NCC_Forms_Subtitle, *.DiscussionTopicSubject, *.OCCHeader, *.ClassPageHeaderPageName {
+  font-size: 1.33em;
+}
+  *.SurveySubTitle {
+    font-size:0.92em;
+  }
+
+/*** <h4> and other elements requiring similar emphasis ***/ 
+h4, *.DetailEventTitle, *.ListViewEventDate, *.ClassPageHeaderTeacherName, *.ClassPageHeaderTeacherEmail {
+  font-size: 1.17em;
+}
+
+/*** <h5> and other elements requiring similar emphasis ***/ 
+h5 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/*** <h6> and other elements requiring similar emphasis ***/ 
+h6 {
+  font-size: 1em;
+  margin: 0;
+  font-style: italic;
+}
+
+/*---------------------------------------------
+                     ::5.1.1 Part Headers
+----------------------------------------------*/
+ 
+/*---------------------------------------------
+                     ::5.2 Links
+----------------------------------------------*/
+/*** <a> and relavent classes applied by BBNC/BBIS  ***/
+a, a.LoginLink, a.PhotoLink, a.Album_BackToPhotosLink, a.Album_AlbumNameLink, a.Album_AlbumActionItem, a.BBLinkHelpIcon, a.PaymentPartClearLink, a.EventCalendarButtons, a.ListViewEventTitle, a.BBFormDisplayHelpImage, a.DiscussionTopicLink, a.DiscussionSearchLink, a.JobBoardSearchLink, a.JobBoardPostLink, a.JobResultsLink {
+	color: #CB4631; /* $link-color */    
+	text-decoration: none;
+	/*transition: all 0.54s ease 0s;  commented out because Matt C. despises transitions. */
+	cursor: pointer;
+}
+a:hover, a.LoginLink:hover, a.PhotoLink:hover, a.Album_BackToPhotosLink:hover, a.Album_AlbumNameLink:hover, a.Album_AlbumActionItem:hover, a.BBLinkHelpIcon:hover, a.PaymentPartClearLink:hover, a.EventCalendarButtons:hover, a.ListViewEventTitle:hover, a.BBFormDisplayHelpImage:hover, a.DiscussionTopicLink:hover, a.DiscussionSearchLink:hover, a.JobBoardSearchLink:hover, a.JobBoardPostLink:hover, a.JobResultsLink:hover {
+	text-decoration: underline;
+	color: #AD3826;  /* $link-hover-color */   
+}
+ /* tab links */
+a.TransactionManagerTabLink, a.BBNotesTabLink {
+ 
+}
+a.TransactionManagerCurrentTabLink {
+ 
+}
+
+ /* event links in steps */
+.BBSequenceMapStepItem, .BBEventRegSequenceMapStepItem, .BBSequenceMapStepLink, .BBEventRegSequenceMapStepLink {
+ 
+}
+ 
+ /* recaptcha links*/
+a.recaptcha_only_if_image, a.recaptcha_only_if_audio {
+ 
+}
+/* readmore links*/
+.readMore {
+	display: block;
+	float: right;
+	text-transform: right;
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+  
+ 
+/*---------------------------------------------
+                     ::5.3 Paragraphs
+----------------------------------------------*/
+p, table.BBListingTable p {
+	padding:0;
+	margin: 0 0 1.15em;
+	line-height: 1.25em;
+	font-size: 1em;
+	white-space: normal;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000; 
+	cursor: help;
+}
+blockquote, q {
+	margin: 0 40px; 
+}
+q:before, q:after {
+	content:'';
+}
+pre, code, kbd, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+pre {
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+small {
+    font-size: 0.85em;
+}
+sub, sup {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+hr {
+	display: block; 
+	height: 1px; 
+	border: 0; 
+	border-top: 1px solid #ccc; 
+	margin: 1em 0; 
+	padding: 0;
+}
+
+/*other text classes */
+.text-left {text-align: left !important; }
+.text-right {text-align: right !important; }
+.text-center {	text-align: center !important; }
+.text-justify {	text-align: justify !important; }
+.hide {  display: none; }
+/*---------------------------------------------
+                     ::5.4 Form Fields Typography
+----------------------------------------------*/
+
+/*---------------------------------------------
+                     ::5.5 Lists
+----------------------------------------------*/
+ul, ol {
+    margin-bottom: 20px;
+	
+}
+ul {
+    list-style: disc outside none;
+	padding: 0 0 0 25px;
+}
+ol {
+    list-style: decimal outside none;
+	padding: 0 0 0 30px;
+}
+ul.square {
+    list-style: square outside none;
+}
+ul.circle {
+    list-style: circle outside none;
+}
+ul ul, ul ol, ol ol, ol ul {
+    margin: 5px 0px;
+}
+ul ul li, ul ol li, ol ol li, ol ul li {
+    margin-bottom: 6px;
+}
+li {
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+ul.large li {
+    line-height: 21px;
+}
+li p {
+    line-height: 21px;
+}
