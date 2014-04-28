@@ -1208,6 +1208,9 @@ table.BBListingTable td.BBListingItem, tr.BBListEvenRowStyle > td, tr.BBListOddR
 table.BBFormTable.DonationFormTable, aside.large-3.columns {
   display: none !important; }
 
+.hideOnMobile {
+  display: none; }
+
 ol#optimizedDonateForm {
   margin: 0;
   padding: 0;
@@ -1691,4 +1694,4 @@ ol#optimizedDonateForm li label[for="cscCode"] + .iconClearField {
 ==========================================================================================*/
 @media (min-width: 721px) {
   .hideOnMobile {
-    display: none; } }
+    display: block; } }
